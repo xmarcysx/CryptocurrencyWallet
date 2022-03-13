@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+.container {
+  padding-top: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.container .coin-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px white;
+  margin: 5px;
+  background-color: white;
+  border: 2px solid black;
+  width: 210px;
+}
+
+.container .coin-price .logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.container .coin-price .logo img {
+  width: 100%;
+}
+
+.container .coin-price div {
+  display: block;
+}
+
+.container .coin-price div h1 {
+  font-size: 15px;
+}
+
+.mywallet {
+  margin: auto;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px white;
+  background-color: white;
+  border: 2px solid black;
+}
+.mywallet h1 {
+  font-size: 20px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    padding-top: 20%;
+  }
+  .container .coin-price {
+    width: 250px;
+  }
+  .mywallet {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding-top: 20%;
+  }
+  .container .coin-price {
+    width: 250px;
+  }
+  .mywallet {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    padding-top: 30%;
+  }
+  .container .coin-price {
+    width: 250px;
+  }
+  .mywallet {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+    padding-top: 30%;
+  }
+  .container .coin-price {
+    width: 250px;
+  }
+  .mywallet {
+    margin-top: 40px;
+  }
+}
